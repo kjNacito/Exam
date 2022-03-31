@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MCM Course Feedback</title>
+<link rel="stylesheet" href="feedback.css">
+<script src="feedback.js"></script>
+</head>
+<body>
+    <section></section>
+
+    <div class = "container">
+        <form name = "box">
+            <h1>Course Feedback</h1>
+            <div class = "main">
+                <input type="text" placeholder="Enter Course Name" id="name" name = "name" >
+                <div id="name-error" class="val-error"></div>
+            </div>
+            <div class = "main">
+                <input type="text" placeholder="Enter Course Instructor" id = "instructor" name ="instructor">
+
+            </div>
+            <textarea cols="15" rows ="5" placeholder="Enter Feedback Here" id = "feedback" name = "feedback"></textarea>
+            <button onclick="validate()">Send</button>
+        </form>
+    </div>
+
+	
+</body>
+</html>

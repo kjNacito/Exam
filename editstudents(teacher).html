@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="adminpage.css">
+    <script src="https://kit.fontawesome.com/8337790c30.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="announce.css">
+    <title>Edit Students</title>
+</head>
+
+
+<body>
+<header>
+    <div style="display:inline-block;vertical-align:top;" class = "logo">
+        <img src ="mcmlogo.png" width="100" height="50">
+    </div>
+
+    <div class = "links">
+        <nav>
+            <ul>
+                <li><a href="">2021-2022</a></li>
+                <li><a href=""> 1st Term</a></li>
+            </ul>    
+        </nav>       
+    </div>
+</header>
+
+
+    <div class = "role">
+        <p class = "user">
+            User:Teacher | Role: Teacher
+        </p>
+    </div>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class =userpic>
+                <img src ="no_avtar.png">
+                <figcaption>TEACHER</figcaption>
+            </div>
+            <ul>
+                <li><a href="teacherpage.html">Announcements</a></li>
+                <li><a href="editstudents(teacher).html">Enroll Students</a></li>
+                <li><a href="editgrades.html">Edit Grades</a></li>
+                
+                <li><a href="aboutmcm.html">Information Page</a></li>
+                <li><a href="test.html">Logout</a></li>
+                
+                
+            </ul> 
+
+            
+        </div>
+        <div class="main_content">
+            <div class="header">Welcome!! Have a nice day.</div>  
+            <div class="info">
+             <div> 
+                 <b>STUDENT ROSTER</b>           
+             </div>
+                
+            
+             <div class="container">
+                <div class="tab tab-1">
+                    <table id="table" border="1">
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Age</th>
+                        
+                    </table>
+                </div>
+                <div class="tab tab-2">
+                    First Name :<input type="text" name="fname" id="fname">
+                    Last Name:<input type="text" name="lname" id="lname">
+                    Age:<input type="number" name="age" id="age">
+                    
+                    <button onclick="addHtmlTableRow();">Add</button>
+                    <button onclick="editHtmlTbleSelectedRow();">Edit</button>
+                    <button onclick="removeSelectedRow();">Remove</button>
+                </div>
+            </div>
+
+                
+
+            
+                
+                 
+             <script src="editstudent.js"></script>
+              
+          </div>
+        </div>
+    </div>
+    
+
+   
+    
+
+</body>
+</html>
